@@ -6,10 +6,24 @@
     <title>Pain</title>
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+        var myNav = document.getElementById('mynav');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
+    </script>
 </head>
 <body>
     <header class="pages">
-        <nav>
+        <nav id="mynav">
            <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
             <div class="list">
                 <ul>
@@ -35,7 +49,7 @@
             <div class="content-1">
                 <h5>HELLO, MY NAME IS</h5>
                 <h1>RORY MCCANN</h1>
-                <p class="paragraph">Et sea sed stet aliquyam consetetur no.<br> Eos amet kasd dolores diam magna tempor.<br> Lorem diam ut at labore invidunt.</p>
+                <p class="paragraph">Et sea sed stet aliquyam consetetur no. Eos amet kasd dolores diam magna tempor. Lorem diam ut at labore invidunt. Lorem diam ut at labore invidunt.</p>
                 <div >
                 <a href="#portfolio" class="btn-1" id="button">MY WORK</a>
                 <a href="#contact" class="btn-2" id="button">HIRE ME</a>
@@ -66,7 +80,7 @@
                 <p class="paragraph">I let of door when no peering, did if the wandering radiant into stopped loneliness, rapping not this then name evilprophet dirges my soul. Before grew sad that but bore, napping the meaninglittle on raven. Meant nevernevermore so nothing it my tapping decorum. Fiend tapping merely some marvelled visiter. Word.</p>
                 <div>
                     <a href="#" class="btn-1" id="button">DOWNLOAD CV</a>
-                <a href="#" class="btn-2" id="button">ABOUT MORE</a>
+                    <a href="#" class="btn-2" id="button">ABOUT MORE</a>
                 </div>
             </div>
         </div>
@@ -237,7 +251,7 @@
         </div>
         <div class="reviews">
             <div class="about-head">
-                <h1 class="head-1">LATEST PORTFOLIO</h1>
+                <h1 class="head-1">OUR CLIENT FEEDBACK</h1>
                 <hr class="line">
                 <p class="para">
                     Ipsum dolor tempor ipsum dolor consetetur sea diam <br> magna sed lorem, diam lorem ipsum vero.
